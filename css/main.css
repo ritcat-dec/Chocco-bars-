@@ -22,13 +22,21 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 18px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: "Alegreya Sans", "Arial", sans-serif;
   line-height: 1.42;
-  font-size: 18px;
   color: #666666;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -55,13 +63,12 @@ ul li {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  max-width: 940px;
   margin: auto;
 }
 
