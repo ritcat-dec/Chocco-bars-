@@ -1,0 +1,71 @@
+.reviews__display {
+    padding: 53px 140px 40px 45px;
+    display: flex;
+    filter: drop-shadow(-10.649px 7.456px 15px rgba(151,167,156,0.17));
+    background: url("/img/feedback/decor-2.png") right top no-repeat;
+    background-color: #f8faf9;
+}
+
+.reviews__photo {
+    width: 253px;
+    height: 259px;
+    margin-right: 20px;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+
+.reviews__info {
+    flex: 1;
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+    & h4 {
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: $black;
+        font-weight: 700;
+    }
+
+    & p {
+        margin-bottom: 25px;
+        color: #666666;
+    }
+}
+
+.reviews__navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews__item {
+    margin-right: 10px;
+   
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.reviews__link {
+    display: inline-block;
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    overflow: hidden;
+    border: 6px solid transparent;
+    transition-property: border, filter;
+    transition-duration: 300ms;
+
+    &:hover {
+        border: 6px solid $greenText;
+        filter: grayscale(70%);
+    }
+  
+    & img {
+        width: 100%;
+        height: 100%;
+   
+        object-fit: cover;
+    }
+}

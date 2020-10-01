@@ -1,0 +1,17 @@
+.feedback {
+    background: url("/img/feedback/decor-1.png") right 10% no-repeat;
+               
+}
+
+.feedback__container {
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+
+.feedback__title {
+    @include section-title;
+}
+
+.feedback__content {
+    margin-top: 40px;
+}

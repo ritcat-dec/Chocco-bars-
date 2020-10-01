@@ -1,0 +1,38 @@
+.delivery {
+    background: url("/img/form/form-bg.png") center center no-repeat;
+    background-size: cover;
+    color: $greenText;
+}
+
+.delivery__container {
+    padding-top: 84px;
+    padding-bottom: 90px;
+    position: relative;
+
+    &:before {
+        position: absolute;
+        content: '';
+        width: 50px;
+        height: 50px;
+        top: 80%;
+        left: -10%;
+        background: url("/img/form/berry-bg.png") center center no-repeat;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 140px;
+        height: 180px;
+        top: 65%;
+        right: -20%;
+        background: url("/img/form/leaf-bg.png") center center no-repeat;
+    }
+}
+
+.delivery__title {
+    margin-bottom: 55px;
+    font-size: 48px;
+    text-align: center;
+    text-transform: uppercase;
+}

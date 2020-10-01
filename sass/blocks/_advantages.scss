@@ -1,0 +1,33 @@
+.advantages {
+    width: 470px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.advantages__item {
+    width: 140px;
+    padding-left: 50px;
+    margin-right: 20px;
+
+    &:first-child {
+        background: url("/img/hero/leaf.png") left center no-repeat;
+    }
+
+    &:nth-child(2) {
+        padding-left: 60px;
+        background: url("/img/hero/car.png") left center no-repeat;
+    }
+
+    &:last-child {
+        margin-right: 0;
+        background: url("/img/hero/thin.png") left center no-repeat;
+        background-size: contain;
+    }
+}
+
+.advantages__text {
+    width: 90px;
+    font-size: 16px;
+    font-weight: 400;
+}

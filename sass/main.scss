@@ -1,0 +1,19 @@
+//normalise
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+@import "blocks/base";
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/button";
+@import "blocks/advantages";
+@import "blocks/features";
+@import "blocks/feedback";
+@import "blocks/reviews";
+@import "blocks/interactive-avatar";
+@import "blocks/delivery";
+@import "blocks/form";
+@import "blocks/fixed-menu";

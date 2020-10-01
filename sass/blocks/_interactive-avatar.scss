@@ -1,0 +1,9 @@
+.interactive-avatar__link {
+
+    border: 6px solid transparent;
+
+    &:hover {
+        border: 6px solid $greenText;
+        filter: grayscale(10%);
+    }
+}

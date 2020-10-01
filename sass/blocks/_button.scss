@@ -1,0 +1,43 @@
+
+
+.button_white {
+    @include button;
+    background-color: $white;
+    color: $greenText;
+
+    &:hover {
+        background-color: $hoverColor;
+        color: $white;
+    }
+}
+
+.button_green {
+    @include button;
+    background-color: $greenText;
+    color: $white;
+
+    &:hover {
+        background-color: $white;
+        color: $greenText;
+    }
+}
+
+.button_reset {
+    @include button;
+    min-width: auto;
+    text-transform: none;
+    background-color: transparent;
+    color: $greenText;
+    font-weight: 400;
+
+    &:hover {
+        color: $black;
+
+    }
+
+    &:focus {
+        outline: none;
+        border: 1px solid $greenText;
+    }
+}
+

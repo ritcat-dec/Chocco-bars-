@@ -1,0 +1,48 @@
+.hero {
+  background: url("/img/hero/hero-bg.png") 85% center no-repeat,
+              url("/img/hero/big-leaf.png") right bottom no-repeat;
+              
+  background-color: #86c3d7;
+  color: $white;
+  position: relative;
+
+  &:after {
+      content: '';
+      position: absolute;
+      width: 332px;
+      height: 119px;
+      top: 89%;
+      left: 65%;
+      background: url("/img/hero/leaf-bg.png") left top no-repeat,
+                  url("/img/hero/berry-bg.png") right bottom no-repeat;
+      z-index: 100;
+  }
+}
+
+.hero__container {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.hero__description {
+  width: 470px;
+}
+
+.hero__title {
+  padding-right: 150px;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero__subtitle {
+  max-width: 380px;
+  padding-right: 35px;
+  font-size: 21px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.hero__button {
+  margin-bottom: 65px;
+}
