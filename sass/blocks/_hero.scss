@@ -17,6 +17,13 @@
                   url("/img/hero/berry-bg.png") right bottom no-repeat;
       z-index: 100;
   }
+
+  @include tablets {
+
+    &:before, &:after {
+      display: none;
+    }
+  }
 }
 
 .hero__container {
@@ -26,21 +33,38 @@
 
 .hero__description {
   width: 470px;
+
+  @include tablets {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .hero__title {
   padding-right: 150px;
-  font-size: 48px;
+  font-size: 2.6rem;
   font-weight: 700;
   text-transform: uppercase;
+
+  @include tablets {
+    padding-right: 0;
+    text-align: center;
+  }
 }
 
 .hero__subtitle {
-  max-width: 380px;
-  padding-right: 35px;
+  max-width: 21rem;
+  padding-right: 2rem;
   font-size: 21px;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 1.1rem;
+  margin-bottom: 1.4rem;
+
+  @include tablets {
+    padding-right: 0;
+    text-align: center;
+  }
 }
 
 .hero__button {

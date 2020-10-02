@@ -9,8 +9,16 @@
   margin-right: 35px;
 }
 
+.header__navigation {
+  @include tablets {
+    display: none;
+  }
+}
+
 .header__menu {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-right: 15px;
 
   & li {
@@ -45,6 +53,10 @@
 
   &:hover {
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.2));
+  }
+
+  @include tablets {
+    display: none;
   }
 }
 
